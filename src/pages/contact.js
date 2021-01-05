@@ -1,15 +1,15 @@
 import React from 'react';
 import Layout from '../components/layout';
 
-const Index = () => {
+const Contact = () => {
   return (
     <Layout>
       <div>
-        <h1>Welcome to hell!</h1>
-        <h2>Lucifer has been waiting.</h2>
+        <h1>Contact Page</h1>
+        <p>You can find me here. Cache me outside</p>
       </div>
     </Layout>
   );
 };
 
-export default Index;
+export default Contact;
