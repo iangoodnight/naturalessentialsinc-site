@@ -6,5 +6,30 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-eslint', 'gatsby-plugin-sass'],
+  siteMetadata: {
+    title: 'Natural Essentials Inc.',
+    description:
+      'Natural Essentials is a full scale OTC drug manufacturer and contract filler of essential oils, natural ingredients, and more.  Call today about our Co-packing services.',
+    author: 'Ian Goodnight',
+  },
+  plugins: [
+    'gatsby-plugin-eslint',
+    'gatsby-plugin-sass',
+    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`,
+      },
+    },
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-remark-images',
+      options: {
+        maxWidth: 750,
+        linkImagesToOrginal: false,
+      },
+    },
+  ],
 };
