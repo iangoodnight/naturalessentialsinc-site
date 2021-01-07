@@ -30,23 +30,29 @@ const Header = () => {
       <nav className={headerStyles.navContainer}>
         <ul className={headerStyles.navList}>
           <li>
-            <Link to="/" activeClassName={headerStyles.activeMenuItem}>
-              Home
+            <Link to="/about/" activeClassName={headerStyles.activeMenuItem}>
+              About
             </Link>
           </li>
           <li>
-            <Link to="/blog/" activeClassName={headerStyles.activeMenuItem}>
-              Blog
+            <Link
+              to="/specialty-ingredients/"
+              activeClassName={headerStyles.activeMenuItem}
+            >
+              Specialty Ingredients
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/co-packing/"
+              activeClassName={headerStyles.activeMenuItem}
+            >
+              Co-packing
             </Link>
           </li>
           <li>
             <Link to="/contact/" activeClassName={headerStyles.activeMenuItem}>
               Contact
-            </Link>
-          </li>
-          <li>
-            <Link to="/about/" activeClassName={headerStyles.activeMenuItem}>
-              About
             </Link>
           </li>
         </ul>
