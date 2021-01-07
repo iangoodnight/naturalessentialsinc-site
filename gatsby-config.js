@@ -14,8 +14,8 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-eslint',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
-    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -23,12 +23,20 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-remark-images',
+      resolve: 'gatsby-transformer-remark',
       options: {
-        maxWidth: 750,
-        linkImagesToOrginal: false,
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOrginal: false,
+            },
+          },
+        ],
       },
     },
   ],

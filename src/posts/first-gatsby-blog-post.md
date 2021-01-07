@@ -1,6 +1,7 @@
 ---
 title: 'First Gatsby Blog Post'
 date: '2021-01-05'
+featured: '../images/lab-image.jpg'
 ---
 
 Ipsing flippery cul intuite et all. Remarc unce unt veriably hist og ulterium.

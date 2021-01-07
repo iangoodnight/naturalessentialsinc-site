@@ -1,6 +1,7 @@
 ---
 title: 'Second Gatsby Blog Post'
 date: '2021-01-06'
+featured: '../images/stock-beaker.jpg'
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
