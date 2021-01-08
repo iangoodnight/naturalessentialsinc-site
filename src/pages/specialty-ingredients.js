@@ -37,7 +37,7 @@ const Specialty = () => {
             <h1>Seed to shelf...quality is our promise!</h1>
             <p>
               It&apos;s not just a slogan, but a philosophy we live by. At
-              Natural Essentials we understand that quality is everything!
+              Natural Essentials Inc.® we understand that quality is everything!
             </p>
           </div>
           <div className={specialtyStyles.columnImage}>
@@ -49,64 +49,72 @@ const Specialty = () => {
         </div>
         <div>
           <h2>Core competencies:</h2>
-          <div className={specialtyStyles.row}>
-            <div className={specialtyStyles.columnImage}>
-              <Img
-                fluid={data.essentialOil.childImageSharp.fluid}
-                alt="Essential oils"
-              />
-            </div>
-            <div className={specialtyStyles.columnInfo}>
-              <h3>Essential Oils</h3>
+          <div className={specialtyStyles.articlesContent}>
+            <div>
+              <h3 className={specialtyStyles.competencies}>Essential Oils</h3>
+              <div className={specialtyStyles.articleImage}>
+                <Img
+                  fluid={data.essentialOil.childImageSharp.fluid}
+                  alt="Essential oils"
+                />
+              </div>
               <p>
-                Natural Essentials started it&apos;s specialty ingredient
+                Natural Essentials Inc.® started it&apos;s specialty ingredient
                 division with a full selection of pure grade essential oils.
                 With over 200 variations of conventional and certified organic
                 essential oils and an ever-growing stock offering of the most
-                popular blended products, today Natural Essentials is one of the
-                largest and well-respected suppliers of essential oils in North
-                America. We stock thousands of pounds of the world&apos;s most
-                precious oils in our 260,000 foot distribution warehouse and
-                offer some of the world&apos;s best pricing and consistent
+                popular blended products, today Natural Essentials Inc.® is one
+                of the largest and well-respected suppliers of essential oils in
+                North America. We stock thousands of pounds of the world&apos;s
+                most precious oils in our 260,000 foot distribution warehouse
+                and offer some of the world&apos;s best pricing and consistent
                 supply on industry staples such as lavender and peppermint oil.
                 Many of these oils are shipped out same day to customers all
                 over the world. To our knowledge there is not another company in
                 all of North America that has an infrastructure and supply chain
-                for essential oils that can compete with Natural Essentials.
-                Over the past 5 years we have developed relationships with
-                producers and suppliers to ensure quality, consistency and
+                for essential oils that can compete with Natural Essentials
+                Inc.®. Over the past 5 years we have developed relationships
+                with producers and suppliers to ensure quality, consistency and
                 availability when other can&apos;t. For this reason, some of the
                 nation&apos;s largest brands depend on our essential oils for
                 their products and our oils can be found in products at almost
                 every retailer in North America.
               </p>
             </div>
-          </div>
-        </div>
-        <div className={specialtyStyles.row}>
-          <div className={specialtyStyles.columnImage}>
-            <Img
-              fluid={data.herbsAndBotanicals.childImageSharp.fluid}
-              alt="Herbs and botanicals"
-            />
-          </div>
-          <div className={specialtyStyles.columnInfo}>
-            <h3>Herbs and Botanicals</h3>
-            <p>
-              In 2014 Natural Essentials acquired the Botanical division of
-              Lebermuth after over 100 years in operation. At the time Lebermuth
-              had hundreds of customers, an impeccable reputation for quality
-              and customer service and strong direct source relationships with
-              fields and farms supplying top quality herbs and botanicals. That
-              single acquisition made us a powerhouse in the world of dried
-              botanicals, herbs and spices. Armed with farm direct relationships
-              we quickly became a dominant force in the distribution of a
-              complete line of more than 1,500 herb and botanical variations.
-              Today, we have expanded that distribution network by offering our
-              premium line of botanicals in smaller quantities at wholesale
-              prices thru our web distribution division at
-              www.bulkapothecary.com
-            </p>
+            <div>
+              <h3 className={specialtyStyles.competencies}>
+                Herbs and Botanicals
+              </h3>
+              <div className={specialtyStyles.articleImage}>
+                <Img
+                  fluid={data.herbsAndBotanicals.childImageSharp.fluid}
+                  alt="Herbs and botanicals"
+                />
+              </div>
+              <p>
+                In 2014 Natural Essentials Inc.® acquired the Botanical division
+                of Lebermuth after over 100 years in operation. At the time
+                Lebermuth had hundreds of customers, an impeccable reputation
+                for quality and customer service and strong direct source
+                relationships with fields and farms supplying top quality herbs
+                and botanicals. That single acquisition made us a powerhouse in
+                the world of dried botanicals, herbs and spices. Armed with farm
+                direct relationships we quickly became a dominant force in the
+                distribution of a complete line of more than 1,500 herb and
+                botanical variations. Today, we have expanded that distribution
+                network by offering our premium line of botanicals in smaller
+                quantities at wholesale prices thru our web distribution
+                division at{' '}
+                <a
+                  href="https://www.bulkapothecary.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  bulkapothecary.com
+                </a>
+                .
+              </p>
+            </div>
           </div>
         </div>
       </div>
