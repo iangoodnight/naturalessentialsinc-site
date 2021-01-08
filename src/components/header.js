@@ -21,7 +21,10 @@ const Header = () => {
       <div className={headerStyles.overlay}></div>
       <div className={headerStyles.heroContent}>
         <p className={headerStyles.brand}>
-          <Link to="/">{data.site.siteMetadata.title}</Link>
+          <Link to="/">
+            {data.site.siteMetadata.title}
+            <span className={headerStyles.rights}>®</span>
+          </Link>
         </p>
         <p className={headerStyles.description}>
           {data.site.siteMetadata.description}

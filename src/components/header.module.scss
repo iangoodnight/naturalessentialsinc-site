@@ -2,6 +2,12 @@ $breakpoint: 680px;
 $breakpoint-mobile: 425px;
 $breakpoint-xs: 320px;
 
+.rights {
+  font-size: .5em;
+  vertical-align: text-bottom;
+  font-weight: 100;
+  opacity: 0.8;
+}
 .active-menu-item {
   text-decoration: underline;
 }
