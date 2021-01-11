@@ -1,0 +1,20 @@
+$breakpoint-xl: 1441px;
+
+.section-title {
+  text-align: center;
+}
+.explainer {
+  @media screen and (min-width: $breakpoint-xl) {
+    display: block;
+    width: 50%;
+    float: left;
+  }
+}
+.demo-wide {
+  @media screen and (min-width: $breakpoint-xl) {
+    margin: 16px 0;
+    padding-left: 6px;
+    width: 50%;
+    float: right;
+  }
+}
