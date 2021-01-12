@@ -1,7 +1,8 @@
 $breakpoint-xl: 1441px;
+$breakpoint-lg: 1024px;
 
 .section-title {
-  text-align: center;
+/*  text-align: center;*/
 }
 .explainer {
   @media screen and (min-width: $breakpoint-xl) {
@@ -16,5 +17,49 @@ $breakpoint-xl: 1441px;
     padding-left: 6px;
     width: 50%;
     float: right;
+    overflow: auto;
+  }
+}
+.article::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.competencies {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #0e0e0e96;
+}
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  .gallery-image {
+    width: 20%;
+    margin: 10px;
+  }
+}
+.last {
+  @media screen and (min-width: $breakpoint-lg) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: top; 
+  
+    .article {
+      flex: 50%;  
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .explainer {
+        width: 95%;
+      }
+      .demo-wide {
+        width: 95%;
+      }
+    }
   }
 }
