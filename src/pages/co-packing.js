@@ -72,14 +72,19 @@ const CoPacking = () => {
       }
     `
   );
+
+  const description =
+    'We currently offer a wide range of co-packing and ' +
+    'private label manufacturing services including, liquid filling, blister ' +
+    'packing, kitting, specialty compounding, and customer formulations, to ' +
+    'name a few.  It is important to note that our service offerings are ' +
+    'continually evolving.';
+
   return (
     <Layout>
-      <Metadata
-        title="Co-packing"
-        description="We currently offer a wide range of co-packing and private label manufacturing services including liquid filling, blister packing, kitting, specialty compounding, and custom formulations to name a few. It is important to note that our service offerings are constantly evolving."
-      />
+      <Metadata title="Co-packing" description={description} />
       <div>
-        <h1>Co-packing / Private Label Manufacturing Services</h1>
+        <h1>Co-packing/private label manufacturing services</h1>
         <p>
           We currently offer a wide range of co-packing and private label
           manufacturing services, including liquid filling, blister packing,
@@ -88,7 +93,7 @@ const CoPacking = () => {
           continually evolving.
         </p>
         <div>
-          <h2 className={coPackStyles.sectionTitle}>Core Service Offerings:</h2>
+          <h2 className={coPackStyles.sectionTitle}>Core service offerings:</h2>
         </div>
         <div>
           <div className={coPackStyles.article}>

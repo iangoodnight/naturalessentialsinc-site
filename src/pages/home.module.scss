@@ -1,10 +1,77 @@
-.banner {
-  text-align: center;
-}
+$breakpoint-lg: 1441px;
+$breakpoint-md: 767px;
+
 .certified {
   width: 200px;
   max-width: 40%;
   margin: auto;
 }
-.lead {
+.competencies {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #0e0e0e96;
+}
+.image-panel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  div {
+    max-width: 455px;
+  }
+  .panel-image {
+    margin-top: 16px;
+  }
+  .bulk {
+    margin: auto;
+    max-width: 100px;
+  }
+  .panel-image {
+      flex: 247px;
+      max-width: 247px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    div {
+      width: 100%;
+    }
+    .panel-image {
+      margin: 16px auto 0;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    .bulk {
+      max-width: 200px;
+    }
+    div {
+      max-width: 900px;
+    }
+  }    
+}
+.image-panel-alt {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  @media screen and (min-width: $breakpoint-md) {
+    .panel-image-alt {
+      order: 1;
+      flex: 48%;
+      max-width: 362px;
+      margin-top: 16px;
+    }
+    .panel-text-alt {
+      order: 2;
+      flex: 48%;
+      margin-left: 10px;
+    }
+  }
+}
+.natural-logo {
+  max-width: 100px;
+  width: 100px;
+  margin: 0 auto 40px;
 }

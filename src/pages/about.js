@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout.js';
 import Metadata from '../components/metadata';
-import aboutStyles from './about.module.scss';
 
 const About = () => {
   const data = useStaticQuery(
@@ -12,13 +11,6 @@ const About = () => {
         streetView: file(relativePath: { eq: "images/street-view.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1168) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        naturalLogo: file(relativePath: { eq: "images/nat-logo.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 200) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -32,8 +24,8 @@ const About = () => {
       <Metadata title="About Natural Essentials Inc." />
       <div>
         <h1>
-          A Proven Leader in Specialty Ingredient Distribution and OTC Drug
-          Manufacturing
+          A proven leader in specialty ingredient distribution and OTC drug
+          manufacturing
         </h1>
         <p>
           Natural Essentials Inc.® is one of the nation&apos;s fastest-growing
@@ -79,12 +71,6 @@ const About = () => {
           <Img
             fluid={data.streetView.childImageSharp.fluid}
             alt="Natural Essentials Inc.®, street-view"
-          />
-        </div>
-        <div className={aboutStyles.logo}>
-          <Img
-            fluid={data.naturalLogo.childImageSharp.fluid}
-            alt="Natural Essentials Inc.®"
           />
         </div>
       </div>
