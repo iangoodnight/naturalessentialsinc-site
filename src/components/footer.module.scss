@@ -1,10 +1,44 @@
+$breakpoint-xl: 1700px;
+
 .site-footer {
   background-color: #000;
   color: #515151;
 }
 
 .container {
-  margin: 0;
+  @media screen and (min-width: $breakpoint-xl) {
+    max-width: 1200px;
+  }
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
   max-width: 750px;
   padding: 1rem;
+
+  div {
+    p {
+      margin: 2px;
+      span {
+        &.highlight {
+          color: #d2d2d2;
+        }
+      }
+    }
+    &.copy {
+      display: flex;
+      p {
+        margin-top: auto;
+      }
+    }
+    &.address {
+      text-transform: uppercase;
+      text-align: right;
+    }
+  }
+}
+.vanity {
+  text-align: center;
+  margin: 20px auto 0;
+  font-size: .8em;
+  color: rgba(95, 95, 95, 0.3);
 }

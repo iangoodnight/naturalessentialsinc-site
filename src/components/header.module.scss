@@ -25,6 +25,10 @@ $breakpoint-xs: 320px;
 .hero-content {
   @media screen and (max-width: $breakpoint-mobile) {
     top: 5%;
+
+    .brand {
+      font-size: 42px;
+    }
   }
   position: absolute;
   top: 35%;

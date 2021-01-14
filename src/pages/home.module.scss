@@ -30,7 +30,8 @@ $breakpoint-md: 767px;
   }
   .panel-image {
       flex: 247px;
-      max-width: 247px;
+      max-width: 300px;
+      margin-left: 10px;
   }
 
   @media screen and (max-width: $breakpoint-md) {
@@ -45,8 +46,10 @@ $breakpoint-md: 767px;
   @media screen and (min-width: $breakpoint-lg) {
     .bulk {
       max-width: 200px;
+      margin-top: 40px;
     }
     div {
+      flex: 50%;
       max-width: 900px;
     }
   }    
@@ -56,12 +59,17 @@ $breakpoint-md: 767px;
   flex-flow: row wrap;
   justify-content: space-between;
 
+  .panel-image-alt {
+    width: 100%;
+  }
+
   @media screen and (min-width: $breakpoint-md) {
     .panel-image-alt {
       order: 1;
       flex: 48%;
-      max-width: 362px;
+      max-width: 525px;
       margin-top: 16px;
+      margin-right: 10px;
     }
     .panel-text-alt {
       order: 2;
@@ -71,7 +79,23 @@ $breakpoint-md: 767px;
   }
 }
 .natural-logo {
-  max-width: 100px;
-  width: 100px;
+  max-width: 300px;
   margin: 0 auto 40px;
+}
+.jumbo {
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: .3rem;
+  background-color: rgba(233, 236, 239, 1);
+  -webkit-box-shadow: 4px 4px 8px -4px rgba(133,133,133,0.5);
+  -moz-box-shadow: 4px 4px 8px -4px rgba(133,133,133,0.5);
+  box-shadow: 4px 4px 8px -4px rgba(133,133,133,0.5);
+
+  h1 {
+    font-size: 3em;
+  }
+}
+.lead {
+  font-style: oblique;
+  margin-bottom: 40px;
 }

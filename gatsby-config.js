@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: 'Natural Essentials Inc.',
     description:
-      'Natural Essentials Inc.® is a full scale OTC drug manufacturer and contract filler of essential oils, natural ingredients, and more.  Call today about our Co-packing services.',
+      'Natural Essentials Inc.® is a full-scale OTC drug manufacturer and contract filler of essential oils, natural ingredients, and more.  Call today about our Co-packing services.',
     author: 'Ian Goodnight',
   },
   plugins: [

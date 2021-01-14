@@ -25,7 +25,7 @@ const Index = () => {
         }
         stockBeaker: file(relativePath: { eq: "images/stock-beaker.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 390) {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -34,21 +34,21 @@ const Index = () => {
           relativePath: { eq: "images/contract-filling.jpg" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 390) {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         productDevelopment: file(relativePath: { eq: "images/lab-image.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1168) {
+            fluid(maxWidth: 525) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         natLogo: file(relativePath: { eq: "images/nat-logo.png" }) {
           childImageSharp {
-            fluid(maxWidth: 100) {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -61,42 +61,44 @@ const Index = () => {
     <Layout>
       <Metadata title="Home" />
       <div id="main">
-        <h1>Seed to shelf...quality is our promise!</h1>
-        <div>
-          <p>
-            Natural Essentials Inc.® is where nature meets science. Our global
-            supply chain, coupled with OTC drug manufacturing expertise, has
-            allowed us to become one of the nation&apos;s leading suppliers of
-            natural ingredients and a global force in contract filling. Today
-            Natural Essentials Inc.® supplies some of the world&apos;s largest
-            brands with quality ingredients and manufacturing services.
-          </p>
-          <p>
-            In addition to being an FDA audited drug facility, we are proud to
-            announce that Natural Essentials Inc.® is now a Certified Organic
-            Manufacturer/Handler.
-          </p>
-          <div className={homePageStyles.certified}>
-            <Img
-              fluid={data.organic.childImageSharp.fluid}
-              alt="Certified Organic Manufacturer"
-            />
+        <div className={homePageStyles.jumbo}>
+          <h1>Seed to shelf...quality is our promise!</h1>
+          <div>
+            <p>
+              Natural Essentials Inc.® is where nature meets science. Our global
+              supply chain, coupled with OTC drug manufacturing expertise, has
+              allowed us to become one of the nation&apos;s leading suppliers of
+              natural ingredients and a global force in contract filling. Today
+              Natural Essentials Inc.® supplies some of the world&apos;s largest
+              brands with quality ingredients and manufacturing services.
+            </p>
+            <p>
+              In addition to being an FDA audited drug facility, we are proud to
+              announce that Natural Essentials Inc.® is now a certified organic
+              manufacturer/handler.
+            </p>
+            <div className={homePageStyles.certified}>
+              <Img
+                fluid={data.organic.childImageSharp.fluid}
+                alt="Certified Organic Manufacturer"
+              />
+            </div>
           </div>
-          <p>
-            At Natural Essentials Inc.®, we are obsessed with offering the
-            latest and greatest natural ingredients. From a line of therapeutic
-            grade essential oils and blends to natural butters, waxes, oils, and
-            botanicals. We have the expertise and global relationships to offer
-            the highest quality ingredients at market leading prices.
-          </p>
+        </div>
+        <div>
           <div className={homePageStyles.naturalLogo}>
             <Img
               fluid={data.natLogo.childImageSharp.fluid}
               alt="Natural Essentials Inc.®"
             />
           </div>
-        </div>
-        <div>
+          <p className={homePageStyles.lead}>
+            At Natural Essentials Inc.®, we are obsessed with offering the
+            latest and greatest natural ingredients. From a line of therapeutic
+            grade essential oils and blends to natural butters, waxes, oils, and
+            botanicals. We have the expertise and global relationships to offer
+            the highest quality ingredients at market leading prices.
+          </p>
           <div>
             <h2>In stock always:</h2>
             <div className={homePageStyles.imagePanel}>

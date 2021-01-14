@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import favicon from '../images/natural-essentials-favicon.png';
 
 const Metadata = ({ title, description }) => {
   const data = useStaticQuery(
@@ -10,6 +11,7 @@ const Metadata = ({ title, description }) => {
           siteMetadata {
             title
             description
+            author
           }
         }
       }
@@ -21,6 +23,8 @@ const Metadata = ({ title, description }) => {
     <Helmet>
       <title>{`${metaTitle} | ${data.site.siteMetadata.title}`}</title>
       <meta name="description" content={metaDescription} />
+      <meta name="author" content={data.site.siteMetadata.author} />
+      <link rel="icon" href={favicon} />
     </Helmet>
   );
 };

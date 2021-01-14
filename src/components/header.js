@@ -58,6 +58,11 @@ const Header = () => {
               Contact
             </Link>
           </li>
+          <li>
+            <Link to="/careers/" activeClassName={headerStyles.activeMenuItem}>
+              Careers
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
