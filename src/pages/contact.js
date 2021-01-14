@@ -15,7 +15,7 @@ const Contact = () => {
           <div>
             <pre>115 Lena Drive</pre>
             <pre>Aurora, OH</pre>
-            <pre>44202
+            <pre>44202</pre>
           </div>
         </div>
         <p>You can find me here. Cache me outside</p>
