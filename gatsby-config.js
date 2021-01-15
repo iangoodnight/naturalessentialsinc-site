@@ -3,9 +3,21 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = {
   /* Your site config here */
+  developMiddleware: app => {
+    app.use(
+      '/.netlify/functions/',
+      createProxyMiddleware({
+        target: 'http:/localhost:9000',
+        pathRewrite: {
+          '/.netlify/functions/': '',
+        },
+      })
+    );
+  },
   siteMetadata: {
     title: 'Natural Essentials Inc.',
     description:

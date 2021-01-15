@@ -1,0 +1,16 @@
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+
+  p {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+  }
+  a {
+    text-transform: uppercase;
+  }
+}

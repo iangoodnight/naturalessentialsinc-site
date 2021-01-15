@@ -50,23 +50,24 @@ const Contact = () => {
               name="Contact"
               method="POST"
               data-netlify="true"
+              action="/thank-you"
             >
               <input type="hidden" name="form-name" value="Contact" />
               <label htmlFor="name">Name:</label>
               <br />
-              <input type="text" id="name" name="name" />
+              <input type="text" id="name" name="name" required />
               <br />
               <label htmlFor="email">Email:</label>
               <br />
-              <input type="email" id="email" name="email" />
+              <input type="email" id="email" name="email" required />
               <br />
               <label htmlFor="subject">Subject:</label>
               <br />
-              <input type="text" id="subject" name="subject" />
+              <input type="text" id="subject" name="subject" required />
               <br />
               <label htmlFor="message">Message:</label>
               <br />
-              <textarea id="message" name="message" rows="20" />
+              <textarea id="message" name="message" rows="20" required />
               <br />
               <input type="submit" value="Submit" />
             </form>
