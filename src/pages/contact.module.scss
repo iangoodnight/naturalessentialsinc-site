@@ -1,0 +1,45 @@
+.contact {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+}
+.address-card {
+  background-color: #e9ecef;
+  border-radius: .3rem;
+  box-shadow: 4px 4px 8px -4px rgba(133, 133, 133, 0.5);
+
+  .address-head {
+    background-color: #c3c3c3;
+    padding: 0 1em;
+
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  .address-body {
+    padding: 0 1em 1em;
+
+    span {
+      font-weight: 500;
+    }
+    input,
+    textarea {
+      width: 100%;
+      border-radius: .3em;
+      border: 1px solid #d4d4d4;
+      padding: .5em;
+    }
+    input[type=submit] {
+      color: #fff;
+      font-size: 100%;
+      line-height: 1.4283;
+      font-family: "Segoe UI:", Roboto, Verdana, "Helvetica Neue", sans-serif;
+      background-color: #6b8e3c;
+      text-transform: uppercase;
+    }
+  }
+}

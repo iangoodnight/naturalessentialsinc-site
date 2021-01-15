@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div className={footerStyles.address}>
           <p>
-            <span className={footerStyles.highlight}>1.3305628022</span>
+            <span className={footerStyles.highlight}>+1.3305628022</span>
           </p>
           <p>Natural Essentials Inc.</p>
           <p>115 Lena Drive, Aurora, OH 44202</p>
