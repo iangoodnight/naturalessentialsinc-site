@@ -72,7 +72,7 @@ const Contact = () => {
               <br />
               <label htmlFor="message">Message:</label>
               <br />
-              <textarea id="message" name="message" rows="40" />
+              <textarea id="message" name="message" rows="20" />
               <br />
               <div data-netlify-recaptcha="true"></div>
               <input type="submit" value="Submit" />
