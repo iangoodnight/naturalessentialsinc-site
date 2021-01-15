@@ -46,8 +46,18 @@ const Contact = () => {
             <h2>Get in touch</h2>
           </div>
           <div className={contactStyles.addressBody}>
-            <form name="Contact" method="POST" data-netlify="true">
+            <form
+              name="Contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
+              netlify-honeypot="bot-trap"
+            >
               <input type="hidden" name="form-name" value="Contact" />
+              <div className={contactStyles.botTrap}>
+                <label htmlFor="bot-trap">Not for humans</label>
+                <input id="bot-trap" name="bot-trap" />
+              </div>
               <label htmlFor="name">Name:</label>
               <br />
               <input type="text" id="name" name="name" />
@@ -64,6 +74,7 @@ const Contact = () => {
               <br />
               <textarea id="message" name="message" rows="40" />
               <br />
+              <div data-netlify-recaptcha="true"></div>
               <input type="submit" value="Submit" />
             </form>
           </div>
