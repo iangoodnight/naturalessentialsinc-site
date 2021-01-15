@@ -51,13 +51,8 @@ const Contact = () => {
               method="POST"
               data-netlify="true"
               data-netlify-recaptcha="true"
-              netlify-honeypot="bot-trap"
             >
               <input type="hidden" name="form-name" value="Contact" />
-              <div className={contactStyles.botTrap}>
-                <label htmlFor="bot-trap">Not for humans</label>
-                <input id="bot-trap" name="bot-trap" />
-              </div>
               <label htmlFor="name">Name:</label>
               <br />
               <input type="text" id="name" name="name" />
