@@ -29,6 +29,9 @@ export function handler(event, context, callback) {
   };
 
   mg.messages().send(mailOptions, function (error, body) {
+    console.log(mailOptions);
+    console.log(body);
+    console.log('debug');
     if (error) {
       callback(null, {
         errorCode,
