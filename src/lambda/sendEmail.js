@@ -14,7 +14,7 @@ const mailgun = require('mailgun-js');
 const mg = mailgun({
   apiKey: process.env.MAILGUN_API_KEY,
   domain: process.env.MAILGUN_DOMAIN,
-  host: 'api.mailgun.net'
+  host: 'api.mailgun.net',
 });
 
 export function handler(event, context, callback) {
@@ -28,7 +28,7 @@ export function handler(event, context, callback) {
     text: `${message}`,
   };
 
-  mg.messages().send(mailOptions, function(error, body) {
+  mg.messages().send(mailOptions, function (error, body) {
     if (error) {
       callback(null, {
         errorCode,
@@ -42,5 +42,5 @@ export function handler(event, context, callback) {
         body: JSON.stringify(body),
       });
     }
-  })
+  });
 }

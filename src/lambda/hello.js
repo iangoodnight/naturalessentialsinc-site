@@ -2,7 +2,7 @@ export function handler(event, context, callback) {
   callback(null, {
     statusCode: 200,
     body: JSON.stringify({
-      msg: "Hello world!",
+      msg: 'Hello world!',
     }),
   });
-};
+}
