@@ -17,11 +17,30 @@ const mg = mailgun({
   host: 'api.mailgun.net'
 });
 
-//export function handler(event, context, callback) {
-//  let data = JSON.parse(event.body);
-//  let { name, email, subject, message } = data;
-//  let mailOptions = {
-//    from: `${name} <${email}>`,
-//    to: process.env
-//  }
-//}
+export function handler(event, context, callback) {
+  let data = JSON.parse(event.body);
+  let { name, email, subject, message } = data;
+  let mailOptions = {
+    from: `${name} <${email}>`,
+    to: process.env.TARGET_EMAIL,
+    replyTo: email,
+    subject: subject,
+    text: `${message}`,
+  };
+
+  mg.messages().send(mailOptions, function(error, body) {
+    if (error) {
+      callback(null, {
+        errorCode,
+        headers,
+        body: JSON.stringify(error),
+      });
+    } else {
+      callback(null, {
+        successCode,
+        headers,
+        body: JSON.stringify(body),
+      });
+    }
+  })
+}
