@@ -21,6 +21,7 @@ const Metadata = ({ title, description }) => {
   const metaDescription = description || data.site.siteMetadata.description;
   return (
     <Helmet>
+      <html lang="en;" />
       <title>{`${metaTitle} | ${data.site.siteMetadata.title}`}</title>
       <meta name="description" content={metaDescription} />
       <meta name="author" content={data.site.siteMetadata.author} />
