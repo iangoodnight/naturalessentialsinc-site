@@ -53,7 +53,12 @@ module.exports = {
         display: `standalone`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
-        icon: `src/images/natural-essentials-favicon.png`,
+        icons: [
+          {
+            src: `src/images/natural-essentials-favicon.png`,
+            purpose: `any maskable`,
+          },
+        ],
       },
     },
     `gatsby-plugin-offline`,
