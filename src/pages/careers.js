@@ -62,7 +62,7 @@ const Careers = () => {
           We consider applicants and make all employment decisions without
           regard to race, color, religion, creed, gender, national origin, age,
           disability, marital or veteran status, or any other legally protected
-          status. We are commited to recruiting and retaining the best talent.
+          status. We are committed to recruiting and retaining the best talent.
         </p>
         <h2>Our people:</h2>
         <p>

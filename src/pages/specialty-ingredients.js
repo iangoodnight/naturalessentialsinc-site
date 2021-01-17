@@ -40,14 +40,13 @@ const Specialty = () => {
             <h1>Seed to shelf...quality is our promise!</h1>
             <p>
               It&apos;s not just a slogan, but a philosophy we live by. At
-              Natural Essentials Inc.®, we understand that quality is
-              everything!
+              Natural Essentials Inc., we understand that quality is everything!
             </p>
           </div>
           <div className={specialtyStyles.columnImage}>
             <Img
               fluid={data.organic.childImageSharp.fluid}
-              alt="Certifed organic manufacturer"
+              alt="Certified organic manufacturer"
             />
           </div>
         </div>
@@ -63,11 +62,11 @@ const Specialty = () => {
                 />
               </div>
               <p>
-                Natural Essentials Inc.® started its specialty ingredient
+                Natural Essentials Inc. started its specialty ingredient
                 division with a full selection of pure grade essential oils.
                 With over 200 variations of conventional and certified organic
                 essential oils and an ever-growing stock offering of the most
-                popular blended products, today Natural Essentials Inc.® is one
+                popular blended products, today Natural Essentials Inc. is one
                 of the largest and well-respected suppliers of essential oils in
                 North America. We stock thousands of pounds of the world&apos;s
                 most precious oils in our 260,000-foot distribution warehouse
@@ -77,11 +76,11 @@ const Specialty = () => {
                 over the world. To our knowledge, there is not another company
                 in all of North America that has an infrastructure and supply
                 chain for essential oils that can compete with Natural
-                Essentials Inc.®. Over the past 5 years, we have developed
+                Essentials Inc. Over the past five years, we have developed
                 relationships with producers and suppliers to ensure quality,
                 consistency, and availability when others can&apos;t. For this
                 reason, some of the nation&apos;s largest brands depend on our
-                essential oils for their products and our oils can be found in
+                essential oils for their products, and you can find our oils in
                 products at almost every retailer in North America.
               </p>
             </div>
@@ -96,18 +95,18 @@ const Specialty = () => {
                 />
               </div>
               <p>
-                In 2014 Natural Essentials Inc.® acquired the Botanical division
-                of Lebermuth after over 100 years in operation. At the time
+                In 2014 Natural Essentials Inc. acquired the Botanical division
+                of Lebermuth after over 100 years in operation. At the time,
                 Lebermuth had hundreds of customers, an impeccable reputation
                 for quality and customer service, and strong direct source
                 relationships with fields and farms supplying top-quality herbs
                 and botanicals. That single acquisition made us a powerhouse in
                 the world of dried botanicals, herbs, and spices. Armed with
-                farm-direct relationships we quickly became a dominant force in
-                the distribution of a complete line of more than 1,500 herb and
+                farm-direct relationships, we quickly became a dominant force,
+                distributing a complete line of more than 1,500 herb and
                 botanical variations. Today, we have expanded that distribution
                 network by offering our premium line of botanicals in smaller
-                quantities at wholesale prices thru our web distribution
+                quantities at wholesale prices through our web distribution
                 division at{' '}
                 <a
                   href="https://www.bulkapothecary.com"

@@ -101,7 +101,7 @@ const CoPacking = () => {
               Lip Balm Contract Filling
             </h3>
             <p className={coPackStyles.explainer}>
-              Natural Essentials Inc.® currently has a lip balm stick filling
+              Natural Essentials Inc. currently has a lip balm stick filling
               capacity of over 50 million units per year and growing. Top that
               with an ability to produce 70 million lip balm jars annually and
               millions of lip gloss tubes, it is easy to see why we are a go-to
@@ -111,7 +111,7 @@ const CoPacking = () => {
               balm filling, we currently stock over 20 SKU&apos;s of &quot;stock
               lip balm&quot; in clear, white, and black sticks in stock, ready
               to be labeled for promotional customers. Whatever your needs,
-              Natural Essentials Inc.® can fill them quickly and economically.
+              Natural Essentials Inc. can fill them quickly and economically.
             </p>
             <div className={coPackStyles.demoWide}>
               <Img
@@ -123,7 +123,7 @@ const CoPacking = () => {
           <div className={coPackStyles.article}>
             <h3 className={coPackStyles.competencies}>Tube Contract Filling</h3>
             <p className={coPackStyles.explainer}>
-              Natural Essentials Inc.® currently fills squeezable plastic tubes
+              Natural Essentials Inc. currently fills squeezable plastic tubes
               ranging in size from .25 oz. up to 8 oz. We currently operate four
               tube-fillers, including a 2-head ultrasonic sealer for those tough
               jobs that require tube sealing through heavy ointments or balms.
@@ -141,15 +141,14 @@ const CoPacking = () => {
           <div className={coPackStyles.article}>
             <h3 className={coPackStyles.competencies}>Bottle Filling</h3>
             <p className={coPackStyles.explainer}>
-              Natural Essentials Inc.® currently has a bottle filling capacity
-              of well over 100 million units per year and growing. When it comes
-              to bottle capability to fill bottle sizes ranging from 3 mL up to
+              Natural Essentials Inc. currently has a bottle filling capacity of
+              well over 100 million units per year and growing. When it comes to
+              bottle capability to fill bottle sizes ranging from 3 mL up to
               gallon jugs and everything in between. However, what makes us
               stand out is our ability to offer product filling ranging from
               water thin, foaming products to heavy ointments and creams.
               Whether you&apos;re looking for a hot or cold pour, at Natural
-              Essentials Inc.®, we have a range of equipment for almost any
-              need.
+              Essentials Inc., we have a range of equipment for almost any need.
             </p>
             <div className={coPackStyles.demoWide}>
               <Img
@@ -174,7 +173,7 @@ const CoPacking = () => {
               without added cost. Along with filling simple products, we have
               also worked on many projects that require multiple pours, such as
               salt and sugar scrubs. Regardless of your needs, chances are
-              Natural Essentials Inc.® can offer a solution that is both
+              Natural Essentials Inc. can offer a solution that is both
               economical and timely.
             </p>
             <div className={coPackStyles.demoWide}>
@@ -190,11 +189,11 @@ const CoPacking = () => {
                 Sample Packet Filling / High-speed Form-fill Seal
               </h3>
               <p className={coPackStyles.explainer}>
-                Natural Essentials Inc.® currently operates multiple vertical
+                Natural Essentials Inc. currently operates multiple vertical
                 form-fill-seal machines allowing us to be highly competitive at
                 filling sample packets and other flexible packagings. With a
                 capacity of 400,000 units per day and run sizes starting at just
-                50,000, Natural Essentials Inc.® can satisfy customers of all
+                50,000, Natural Essentials Inc. can satisfy customers of all
                 sizes.
               </p>
               <div className={coPackStyles.demoWide}>
@@ -210,12 +209,12 @@ const CoPacking = () => {
                 wrapping, and kitting)
               </h3>
               <p className={coPackStyles.explainer}>
-                Natural Essentials Inc.® currently operates 5 Alloyd rotary
+                Natural Essentials Inc. currently operates 5 Alloyd rotary
                 blister machines giving us a capacity of almost 300,000 units
                 per day. In addition to this, we also offer countless other
                 secondary packaging services such as high-speed cartoning,
                 shrink wrapping, display packing, and more, all under one roof.
-                At Natural Essentials Inc.®, we never outsource secondary
+                At Natural Essentials Inc., we never outsource secondary
                 packaging, so you can rest assured your entire project comes
                 together seamlessly the first time, every time.
               </p>

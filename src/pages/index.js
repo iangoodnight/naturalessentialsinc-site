@@ -65,16 +65,16 @@ const Index = () => {
           <h1>Seed to shelf...quality is our promise!</h1>
           <div>
             <p>
-              Natural Essentials Inc.® is where nature meets science. Our global
+              Natural Essentials Inc. is where nature meets science. Our global
               supply chain, coupled with OTC drug manufacturing expertise, has
               allowed us to become one of the nation&apos;s leading suppliers of
               natural ingredients and a global force in contract filling. Today
-              Natural Essentials Inc.® supplies some of the world&apos;s largest
+              Natural Essentials Inc. supplies some of the world&apos;s largest
               brands with quality ingredients and manufacturing services.
             </p>
             <p>
               In addition to being an FDA audited drug facility, we are proud to
-              announce that Natural Essentials Inc.® is now a certified organic
+              announce that Natural Essentials Inc. is now a certified organic
               manufacturer/handler.
             </p>
             <div className={homePageStyles.certified}>
@@ -93,9 +93,9 @@ const Index = () => {
             />
           </div>
           <p className={homePageStyles.lead}>
-            At Natural Essentials Inc.®, we are obsessed with offering the
-            latest and greatest natural ingredients. From a line of therapeutic
-            grade essential oils and blends to natural butters, waxes, oils, and
+            At Natural Essentials Inc., we are obsessed with offering the latest
+            and greatest natural ingredients. From a line of therapeutic grade
+            essential oils and blends to natural butters, waxes, oils, and
             botanicals. We have the expertise and global relationships to offer
             the highest quality ingredients at market leading prices.
           </p>
@@ -157,10 +157,10 @@ const Index = () => {
             <div className={homePageStyles.imagePanel}>
               <div>
                 <p>
-                  Natural Essentials Inc.® is a full-scall FDA audited drug
+                  Natural Essentials Inc. is a full-scale FDA audited drug
                   facility. With the capacity to fill over 750,000 units per day
                   of various liquid products in package sizes ranging from 5 mL
-                  to 55-gallon drums, our broad range include lip balm stick
+                  to 55-gallon drums, our broad range includes lip balm stick
                   filling, tubes, bottles, jars, vials, sample packs, drums,
                   pails, and more.
                 </p>

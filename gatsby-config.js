@@ -44,5 +44,18 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Natural Essentials Inc.`,
+        short_name: `Natural Essentials`,
+        start_url: `/`,
+        display: `standalone`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        icon: `src/images/natural-essentials-favicon.png`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 };
