@@ -21,7 +21,7 @@ const Careers = () => {
   );
 
   const description =
-    'Natural Essentials Inc.® offers proactive, ' +
+    'Natural Essentials Inc. offers proactive, ' +
     'solution-oriented individuals a place to start of build a long-term ' +
     'career.  As a hyper-growth company, we are continually looking for the ' +
     'best and brightest to join our team.';
@@ -37,13 +37,13 @@ const Careers = () => {
       <div>
         <h1>Our employees make us great!</h1>
         <p>
-          Natural Essentials Inc.® offers proactive, solution-oriented
+          Natural Essentials Inc. offers proactive, solution-oriented
           individuals a place to start to build a long-term career. As a
           hyper-growth company, we are continually looking for the best and the
           brightest to join our team.
         </p>
         <p>
-          By joining Natural Essentials Inc.®, you will become part of an
+          By joining Natural Essentials Inc., you will become part of an
           organization with a competitive and enthusiastic culture that believes
           in promoting from within. We recognize that a company is not a
           building, production lines, equipment, or products, but people. For
@@ -52,13 +52,13 @@ const Careers = () => {
           something great.
         </p>
         <p>
-          At Natural Essentials Inc.®, our people are our most valuable asset.
+          At Natural Essentials Inc., our people are our most valuable asset.
           One of our openings could be your perfect opportunity!
         </p>
         <h2>Our hiring practices:</h2>
         <p>
-          A key element of Natural Essentials Inc.® is our commitment to
-          diversity. Natural Essentials Inc.® is an equal opportunity employer.
+          A key element of Natural Essentials Inc. is our commitment to
+          diversity. Natural Essentials Inc. is an equal opportunity employer.
           We consider applicants and make all employment decisions without
           regard to race, color, religion, creed, gender, national origin, age,
           disability, marital or veteran status, or any other legally protected
@@ -66,8 +66,7 @@ const Careers = () => {
         </p>
         <h2>Our people:</h2>
         <p>
-          Natural Essentials Inc.® is a company built on a commitment to
-          success.
+          Natural Essentials Inc. is a company built on a commitment to success.
         </p>
         <h3>Our values:</h3>
         <ul>
@@ -84,7 +83,7 @@ const Careers = () => {
           <li>Persistence</li>
         </ul>
         <p>
-          At Natural Essentials Inc.®, these values form the basis of a culture
+          At Natural Essentials Inc., these values form the basis of a culture
           focused on growing both our team and our business.
         </p>
         <h2 className={careerStyles.banner}>Apply today</h2>
