@@ -62,7 +62,7 @@ const Index = () => {
       <Metadata title="Home" />
       <div id="main">
         <div className={homePageStyles.jumbo}>
-          <h1>Seed to shelf...quality is our promise!</h1>
+          <h1>Seed to shelf... quality is our promise!</h1>
           <div>
             <p>
               Natural Essentials Inc. is where nature meets science. Our global

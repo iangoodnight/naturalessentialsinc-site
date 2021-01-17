@@ -37,7 +37,7 @@ const Specialty = () => {
       <div>
         <div className={specialtyStyles.row}>
           <div className={specialtyStyles.columnInfo}>
-            <h1>Seed to shelf...quality is our promise!</h1>
+            <h1>Seed to shelf... quality is our promise!</h1>
             <p>
               It&apos;s not just a slogan, but a philosophy we live by. At
               Natural Essentials Inc., we understand that quality is everything!
