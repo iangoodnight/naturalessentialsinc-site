@@ -36,7 +36,6 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "http-proxy-middleware": "^1.0.6",
     "netlify-lambda": "^2.0.2",
     "npm-run-all": "^4.1.5",
     "prettier": "2.2.1"

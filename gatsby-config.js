@@ -3,8 +3,6 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-const { createProxyMiddleware } = require('http-proxy-middleware');
-
 const description =
   'Natural Essentials Inc.® is a full-scale OTC drug manufacturer and ' +
   'contract filler of essential oils, natural ingredients, and more.  Call ' +
@@ -12,17 +10,6 @@ const description =
 
 module.exports = {
   /* Your site config here */
-  developMiddleware: app => {
-    app.use(
-      '/.netlify/functions/',
-      createProxyMiddleware({
-        target: 'http:/localhost:9000',
-        pathRewrite: {
-          '/.netlify/functions/': '',
-        },
-      })
-    );
-  },
   siteMetadata: {
     title: 'Natural Essentials Inc.',
     description: description,
@@ -46,7 +33,7 @@ module.exports = {
         name: `Natural Essentials Inc.`,
         short_name: `Natural Essentials`,
         start_url: `/`,
-        display: `standalone`,
+        display: `standalone`
         background_color: `#f7f0eb`,
         theme_color: `#6b8e3c`,
         icon: `src/images/logo-large-square.png`,

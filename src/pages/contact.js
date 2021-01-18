@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Metadata from '../components/metadata';
+import Modal from '../components/modalAlert.js';
 import contactStyles from './contact.module.scss';
 
 const endpoints = {
@@ -14,6 +15,15 @@ class Contact extends React.Component {
     email: '',
     subject: '',
     message: '',
+    show: false,
+  };
+
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
   };
 
   handleChange = event => {
@@ -46,14 +56,18 @@ class Contact extends React.Component {
       loading: false,
       error: false,
     });
+
+    this.showModal();
   };
 
   handleError = msg => {
+    console.log('handle error');
     this.setState({
       error: true,
       msg,
     });
   };
+
   render() {
     return (
       <Layout>
@@ -153,6 +167,13 @@ class Contact extends React.Component {
               </form>
             </div>
           </div>
+          <Modal show={this.state.show} handleClose={this.hideModal}>
+            <p>
+              {this.state.error
+                ? this.state.msg
+                : 'Thank you for your submission!'}
+            </p>
+          </Modal>
         </div>
       </Layout>
     );
