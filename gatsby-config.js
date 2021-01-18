@@ -5,6 +5,11 @@
  */
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
+const description =
+  'Natural Essentials Inc.® is a full-scale OTC drug manufacturer and ' +
+  'contract filler of essential oils, natural ingredients, and more.  Call ' +
+  'today about our co-packing services.';
+
 module.exports = {
   /* Your site config here */
   developMiddleware: app => {
@@ -20,12 +25,10 @@ module.exports = {
   },
   siteMetadata: {
     title: 'Natural Essentials Inc.',
-    description:
-      'Natural Essentials Inc.® is a full-scale OTC drug manufacturer and contract filler of essential oils, natural ingredients, and more.  Call today about our Co-packing services.',
+    description: description,
     author: 'Ian Goodnight',
   },
   plugins: [
-    'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
@@ -33,13 +36,6 @@ module.exports = {
       options: {
         name: 'src',
         path: `${__dirname}/src/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/images/`,
       },
     },
     'gatsby-transformer-sharp',
@@ -52,7 +48,7 @@ module.exports = {
         start_url: `/`,
         display: `standalone`,
         background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        theme_color: `#6b8e3c`,
         icon: `src/images/natural-essentials-favicon.png`,
         icon_options: {
           purpose: `any maskable`,
