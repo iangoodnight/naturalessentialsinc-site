@@ -14,35 +14,35 @@ const CoPacking = () => {
         ) {
           childImageSharp {
             fluid(maxWidth: 718) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         tubeFilling: file(relativePath: { eq: "images/tube-filling.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 718) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         bottleFilling: file(relativePath: { eq: "images/bottle-filler.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 718) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         jarFilling: file(relativePath: { eq: "images/jar-filling.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 718) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         samplePackets: file(relativePath: { eq: "images/sample-packet.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 575) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
@@ -51,21 +51,21 @@ const CoPacking = () => {
         ) {
           childImageSharp {
             fluid(maxWidth: 175) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         blisterBurst: file(relativePath: { eq: "images/burst.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 175) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         halo: file(relativePath: { eq: "images/halo.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 175) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

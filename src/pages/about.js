@@ -11,7 +11,7 @@ const About = () => {
         streetView: file(relativePath: { eq: "images/street-view.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1168) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

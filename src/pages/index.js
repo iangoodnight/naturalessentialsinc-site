@@ -12,21 +12,21 @@ const Index = () => {
         organic: file(relativePath: { eq: "images/organic-cert.png" }) {
           childImageSharp {
             fluid(maxWidth: 247) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         bulkLogo: file(relativePath: { eq: "images/bulk-logo.webp" }) {
           childImageSharp {
             fluid(maxWidth: 200) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         stockBeaker: file(relativePath: { eq: "images/stock-beaker.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
@@ -35,21 +35,21 @@ const Index = () => {
         ) {
           childImageSharp {
             fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         productDevelopment: file(relativePath: { eq: "images/lab-image.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 525) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         natLogo: file(relativePath: { eq: "images/nat-logo.png" }) {
           childImageSharp {
             fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout.js';
 import Metadata from '../components/metadata';
-import '../components/pageImage.js';
 import specialtyStyles from './specialtyIngredients.module.scss';
 
 const Specialty = () => {
@@ -11,18 +10,34 @@ const Specialty = () => {
     graphql`
       query {
         organic: file(relativePath: { eq: "images/organic-cert.png" }) {
-          ...pageImage
+          childImageSharp {
+            fluid(maxWidth: 266) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
         }
         essentialOil: file(relativePath: { eq: "images/essential-oil.jpg" }) {
-          ...pageImage
+          childImageSharp {
+            fluid(maxWidth: 266) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
         }
         herbsAndBotanicals: file(
           relativePath: { eq: "images/herbs-and-botanicals.jpg" }
         ) {
-          ...pageImage
+          childImageSharp {
+            fluid(maxWidth: 266) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
         }
         bulkLogo: file(relativePath: { eq: "images/bulk-logo.webp" }) {
-          ...pageImage
+          childImageSharp {
+            fluid(maxWidth: 266) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
         }
       }
     `

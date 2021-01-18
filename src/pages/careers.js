@@ -12,7 +12,7 @@ const Careers = () => {
         applyNow: file(relativePath: { eq: "images/apply-now.png" }) {
           childImageSharp {
             fluid(maxWidth: 1168) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
