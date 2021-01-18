@@ -19,7 +19,13 @@ $breakpoint-xs: 320px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/header-image.webp");
+  @media screen and (min-width: $breakpoint) {
+    background-image: url("../images/header-image.webp");
+  }
+  @media only screen and (min-width: $breakpoint-xs) and (max-width:
+  $breakpoint) {
+    background-image: url("../images/header-image-mobile.webp");
+  }
 }
 
 .hero-content {
