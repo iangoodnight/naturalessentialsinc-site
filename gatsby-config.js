@@ -34,8 +34,8 @@ module.exports = {
         short_name: `Natural Essentials`,
         start_url: `/`,
         display: `standalone`,
-        background_color: `#f7f0eb`,
-        theme_color: `#6b8e3c`,
+        background_color: `#fff`,
+        theme_color: `#432b1c`,
         icon: `src/images/logo-large-square.png`,
         icon_options: {
           purpose: `any maskable`,
