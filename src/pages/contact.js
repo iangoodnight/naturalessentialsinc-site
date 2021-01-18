@@ -37,17 +37,23 @@ class Contact extends React.Component {
   handleSubmit = e => {
     let { name, email, subject, message } = this.state;
     let data = { name, email, subject, message };
-    axios.post(endpoints.contact, JSON.stringify(data)).then(response => {
-      if (response.status !== 200) {
-        this.handleError();
-      } else {
-        this.handleSuccess();
-      }
-    });
+    axios
+      .post(endpoints.contact, JSON.stringify(data))
+      .then(response => {
+        if (response.status !== 200) {
+          this.handleError();
+        } else {
+          this.handleSuccess();
+        }
+      })
+      .catch(error => {
+        this.handleError(error.message);
+      });
     e.preventDefault();
   };
 
   handleSuccess = () => {
+    this.showModal();
     this.setState({
       name: '',
       email: '',
@@ -56,8 +62,6 @@ class Contact extends React.Component {
       loading: false,
       error: false,
     });
-
-    this.showModal();
   };
 
   handleError = msg => {
@@ -66,6 +70,7 @@ class Contact extends React.Component {
       error: true,
       msg,
     });
+    this.showModal();
   };
 
   render() {
