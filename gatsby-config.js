@@ -49,7 +49,7 @@ module.exports = {
         display: `standalone`,
         background_color: `#f7f0eb`,
         theme_color: `#6b8e3c`,
-        icon: `src/images/natural-essentials-favicon.png`,
+        icon: `src/images/logo-large-square.png`,
         icon_options: {
           purpose: `any maskable`,
         },
