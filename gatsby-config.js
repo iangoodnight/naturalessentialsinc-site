@@ -33,7 +33,7 @@ module.exports = {
         name: `Natural Essentials Inc.`,
         short_name: `Natural Essentials`,
         start_url: `/`,
-        display: `standalone`
+        display: `standalone`,
         background_color: `#f7f0eb`,
         theme_color: `#6b8e3c`,
         icon: `src/images/logo-large-square.png`,
