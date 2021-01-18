@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "name": "naturalessentialsinc",
+  "private": false,
+  "description": "A landing zone and contact site for Natural Essentials, Inc.",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
