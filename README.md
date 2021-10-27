@@ -1,6 +1,7 @@
 # Natural Essentials Inc.®
 
 This repo hosts the landing site for Natural Essentials Inc.
+[Check out the demo!]
 
 ## Upgrading from GoDaddy's site generator 
 
@@ -132,3 +133,4 @@ accessible and fast!
 [4]: <https://app.netlify.com/start> "New site from Git"
 [5]: ./src/images/mobile-test-new-site.jpg (Mobile scores)
 [6]: ./src/images/desktop-performance-new-site.jpg (Desktop scores)
+[Check out the demo!]: https://naturalessentialsinc.netlify.app
